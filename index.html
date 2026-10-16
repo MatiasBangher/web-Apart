@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Casa Lumen | Un palacio de doce habitaciones en Lecce</title>
+  <meta name="description" content="Doce habitaciones en un palacio del siglo XVII en Lecce, restaurado sin prisa y lleno de luz del sur.">
+  <meta name="theme-color" content="#EFE3CC">
+  <link rel="icon" href="assets/brand/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/brand/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png">
+  <link rel="preload" href="fonts/gloock-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/schibsted-grotesk-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/img/hero/facade.webp" as="image" type="image/webp">
+  <script>
+    (function () {
+      var d = document.documentElement;
+      d.classList.add('js');
+      var q = new URLSearchParams(location.search);
+      if (q.has('reduced') || matchMedia('(prefers-reduced-motion: reduce)').matches) d.classList.add('reduced');
+      else d.classList.add('motion');
+    })();
+  </script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Saltar al contenido</a>
+
+  <header class="nav" data-nav>
+    <div class="nav__bar">
+      <a class="nav__brand" href="#top" aria-label="Casa Lumen, volver al inicio">
+        <svg class="nav__mark" viewBox="0 0 64 64" aria-hidden="true"><use href="#arch-mark"/></svg>
+        <span class="nav__word">Casa Lumen</span>
+      </a>
+      <nav class="nav__links" aria-label="Principal">
+        <a href="#house">La casa</a>
+        <a href="#rooms">Habitaciones</a>
+        <a href="#days">Los días</a>
+      </nav>
+      <a class="btn btn--terra nav__cta" href="#reserve">Reservar habitación</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO: a paper theatre. Back to front: city plate, palazzo, "Casa" (behind the portico), portico, "Lumen" (in front of the portico, behind the agave), plants -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero__stage" data-hero>
+        <div class="hl hl--city" data-l="city"><img src="assets/img/hero/city.webp" alt="" width="2560" height="1440" fetchpriority="high"></div>
+        <div class="hl hl--facade-sh" data-l="facadeSh"><img src="assets/img/hero/facade-shadow.webp" alt="" width="640" height="360"></div>
+        <div class="hl hl--facade" data-l="facade"><img src="assets/img/hero/facade.webp" alt="" width="2560" height="1440" fetchpriority="high"></div>
+
+        <h1 class="visually-hidden" id="hero-title">Casa Lumen</h1>
+        <span class="hero__word hero__word--casa" data-word="casa" aria-hidden="true">Casa</span>
+
+        <div class="hl hl--arcade-sh" data-l="arcadeSh">
+          <picture>
+            <source media="(max-aspect-ratio: 4/5)" srcset="assets/img/hero/arcade-tall-shadow.webp">
+            <img src="assets/img/hero/arcade-wide-shadow.webp" alt="" width="640" height="360">
+          </picture>
+        </div>
+        <div class="hl hl--arcade" data-l="arcade">
+          <picture>
+            <source media="(max-aspect-ratio: 4/5)" srcset="assets/img/hero/arcade-tall.webp">
+            <img src="assets/img/hero/arcade-wide.webp" alt="" width="2560" height="1440" fetchpriority="high">
+          </picture>
+        </div>
+
+        <span class="hero__word hero__word--lumen" data-word="lumen" aria-hidden="true">Lumen</span>
+
+        <div class="plant plant--olive-sh plant--sh" data-l="oliveSh" aria-hidden="true"><img src="assets/img/hero/olive-branch-shadow.webp" alt="" width="375" height="287"></div>
+        <div class="plant plant--fig-sh plant--sh" data-l="figSh" aria-hidden="true"><img src="assets/img/hero/fig-branch-shadow.webp" alt="" width="325" height="275"></div>
+        <div class="plant plant--agave-sh plant--sh" data-l="agaveSh" aria-hidden="true"><img src="assets/img/hero/agave-pot-shadow.webp" alt="" width="275" height="325"></div>
+        <div class="plant plant--olive" data-l="olive" aria-hidden="true"><img src="assets/img/hero/olive-branch.webp" alt="" width="1500" height="1150"></div>
+        <div class="plant plant--fig" data-l="fig" aria-hidden="true"><img src="assets/img/hero/fig-branch.webp" alt="" width="1300" height="1100"></div>
+        <div class="plant plant--agave" data-l="agave" aria-hidden="true"><img src="assets/img/hero/agave-pot.webp" alt="" width="1100" height="1300"></div>
+
+        <div class="hero__label" data-hero-label>
+          <p class="hero__lede">Doce habitaciones en un palacio del siglo XVII en Lecce, restaurado sin prisa y lleno de luz del sur.</p>
+          <div class="hero__actions">
+            <a class="btn btn--terra" href="#reserve">Reservar habitación</a>
+            <a class="btn btn--line" href="#rooms">Ver habitaciones</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MANIFESTO: sunlight through the courtyard olive moves across the plaster -->
+    <section class="house" id="house" aria-labelledby="house-title">
+      <div class="house__light" aria-hidden="true">
+        <video class="house__video" muted loop playsinline preload="none" poster="assets/video/leaf-light-poster.webp" data-video>
+          <source src="assets/video/leaf-light.webm" type="video/webm">
+          <source src="assets/video/leaf-light.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="house__inner">
+        <h2 class="visually-hidden" id="house-title">La casa</h2>
+        <p class="house__text" data-print>
+          La casa se construyó en 1652
+          <span class="inline-img" aria-hidden="true"><img src="assets/img/hero/facade.webp" alt="" width="2560" height="1440" loading="lazy"></span>
+          con la piedra blanda de Lecce. Pasamos cuatro años restaurándola a mano, conservamos cada bóveda, pusimos suelos nuevos de barro local
+          <span class="inline-img inline-img--round" aria-hidden="true"><img src="assets/img/rooms/loggia.webp" alt="" width="1400" height="1750" loading="lazy"></span>
+          y le dimos a cada una de las doce habitaciones su propia hora de sol.
+        </p>
+        <p class="house__sign" data-sign>Marta y Paolo Cirillo, que viven en el último piso</p>
+      </div>
+    </section>
+
+    <!-- ROOMS: a stack of postcards; each new card settles on the last -->
+    <section class="rooms" id="rooms" aria-labelledby="rooms-title">
+      <header class="rooms__head">
+        <h2 class="section-title" id="rooms-title" data-lines>Doce habitaciones, cuatro tipos</h2>
+        <p class="section-lede">Cada habitación conserva algo de la casa original: una bóveda estrellada, un nicho de piedra, una logia sobre los tejados.</p>
+      </header>
+      <div class="rooms__stack">
+        <article class="room" style="--i:0; --r:-1.6deg" data-room>
+          <div class="room__card">
+            <figure class="room__img"><img src="assets/img/rooms/camera-del-sole.webp" alt="Una habitación blanca abovedada con ventana en arco y una cama con cabecero terracota" width="1400" height="1750" loading="lazy"></figure>
+            <div class="room__body">
+              <p class="room__count">Cuatro habitaciones así</p>
+              <h3 class="room__name">Camera del Sole</h3>
+              <p class="room__text">Las habitaciones más luminosas de la casa, con bóveda estrellada y sol de mañana sobre la cama.</p>
+              <dl class="room__facts">
+                <div><dt>Superficie</dt><dd>28 m²</dd></div>
+                <div><dt>Cama</dt><dd>King</dd></div>
+                <div><dt>Da a</dt><dd>El jardín</dd></div>
+              </dl>
+              <p class="room__rate">Desde 420 € la noche, desayuno incluido</p>
+            </div>
+          </div>
+        </article>
+        <article class="room" style="--i:1; --r:1.2deg" data-room>
+          <div class="room__card">
+            <figure class="room__img"><img src="assets/img/rooms/loggia.webp" alt="Una logia con tres arcos abiertos a cúpulas y tejados" width="1400" height="1750" loading="lazy"></figure>
+            <div class="room__body">
+              <p class="room__count">Dos habitaciones así</p>
+              <h3 class="room__name">La Loggia</h3>
+              <p class="room__text">Tres arcos se abren hacia las cúpulas del casco antiguo. La luz de la tarde llega hasta la cama.</p>
+              <dl class="room__facts">
+                <div><dt>Superficie</dt><dd>46 m²</dd></div>
+                <div><dt>Cama</dt><dd>King y diván</dd></div>
+                <div><dt>Da a</dt><dd>Los tejados</dd></div>
+              </dl>
+              <p class="room__rate">Desde 690 € la noche, desayuno incluido</p>
+            </div>
+          </div>
+        </article>
+        <article class="room" style="--i:2; --r:-0.8deg" data-room>
+          <div class="room__card">
+            <figure class="room__img"><img src="assets/img/rooms/stanza-della-corte.webp" alt="Una habitación encalada en verde oliva con nicho de piedra, lavabo y una silla oscura" width="1400" height="1750" loading="lazy"></figure>
+            <div class="room__body">
+              <p class="room__count">Cuatro habitaciones así</p>
+              <h3 class="room__name">Stanza della Corte</h3>
+              <p class="room__text">Cal color oliva, un nicho de piedra tallada y una silla tranquila para leer sobre el patio.</p>
+              <dl class="room__facts">
+                <div><dt>Superficie</dt><dd>32 m²</dd></div>
+                <div><dt>Cama</dt><dd>Queen</dd></div>
+                <div><dt>Da a</dt><dd>El patio</dd></div>
+              </dl>
+              <p class="room__rate">Desde 480 € la noche, desayuno incluido</p>
+            </div>
+          </div>
+        </article>
+        <article class="room" style="--i:3; --r:1.8deg" data-room>
+          <div class="room__card">
+            <figure class="room__img"><img src="assets/img/rooms/torretta.webp" alt="Una habitación de torre color terracota con una ventana redonda que enmarca un campanario" width="1400" height="1750" loading="lazy"></figure>
+            <div class="room__body">
+              <p class="room__count">Dos habitaciones así</p>
+              <h3 class="room__name">La Torretta</h3>
+              <p class="room__text">Un cuarto de escritura en lo alto de la casa, con el campanario de la catedral enmarcado en una ventana redonda.</p>
+              <dl class="room__facts">
+                <div><dt>Superficie</dt><dd>38 m²</dd></div>
+                <div><dt>Cama</dt><dd>King</dd></div>
+                <div><dt>Da a</dt><dd>La catedral</dd></div>
+              </dl>
+              <p class="room__rate">Desde 560 € la noche, desayuno incluido</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- EXPERIENCES: arch-windowed plates drifting at different speeds -->
+    <section class="days" id="days" aria-labelledby="days-title">
+      <header class="days__head">
+        <h2 class="section-title" id="days-title" data-lines>Cómo pasan los días</h2>
+        <p class="section-lede">Nada está programado a menos que lo pidas. Estas son las cosas por las que vuelven nuestros huéspedes.</p>
+      </header>
+      <div class="days__grid">
+        <article class="day day--a" data-speed="0.9">
+          <figure class="arch" data-arch><img src="assets/img/experiences/supper.webp" alt="Una mesa larga con velas bajo un olivo en un patio de piedra" width="1200" height="1600" loading="lazy"></figure>
+          <h3 class="day__name">Cena en el patio</h3>
+          <p class="day__text">Mesas largas bajo el viejo olivo, cuatro noches por semana. La cocina prepara lo que haya traído el mercado.</p>
+        </article>
+        <article class="day day--b" data-speed="1.14">
+          <figure class="arch" data-arch><img src="assets/img/experiences/atelier.webp" alt="Estantes con piezas esmaltadas en terracota, crema y oliva en un taller soleado" width="1200" height="1600" loading="lazy"></figure>
+          <h3 class="day__name">El taller de cerámica</h3>
+          <p class="day__text">Modela una pieza con Grazia, que lleva nueve años al frente del taller junto a la escalera de servicio.</p>
+        </article>
+        <article class="day day--c" data-speed="1.06">
+          <figure class="arch" data-arch><img src="assets/img/experiences/terrace.webp" alt="Una azotea al atardecer con guirnaldas de luces y un campanario" width="1200" height="1600" loading="lazy"></figure>
+          <h3 class="day__name">La azotea al atardecer</h3>
+          <p class="day__text">Un aperitivo en la terraza mientras los campanarios se tiñen de rosa.</p>
+        </article>
+        <article class="day day--d" data-speed="0.86">
+          <figure class="arch" data-arch><img src="assets/img/experiences/grove.webp" alt="Un olivo antiguo y retorcido sobre tierra roja detrás de un muro de piedra seca" width="1200" height="1600" loading="lazy"></figure>
+          <h3 class="day__name">Desayuno en el olivar</h3>
+          <p class="day__text">Un trayecto corto hasta un olivar cerca de Otranto, con desayuno bajo árboles más antiguos que la casa.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- TESTIMONIAL: a terracotta band slides over the plates -->
+    <section class="voice" aria-labelledby="voice-title">
+      <img class="voice__branch" data-branch src="assets/img/hero/olive-branch.webp" alt="" width="1500" height="1150" loading="lazy" aria-hidden="true">
+      <div class="voice__inner">
+        <h2 class="visually-hidden" id="voice-title">Palabras de una huésped</h2>
+        <figure class="voice__figure">
+          <blockquote class="voice__quote"><p data-lines>“Vinimos por tres noches y nos quedamos nueve. La Loggia a las seis de la tarde ya justifica el viaje.”</p></blockquote>
+          <figcaption class="voice__cite">Hanne Lindqvist, Copenhague</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- BOOKING -->
+    <section class="reserve" id="reserve" aria-labelledby="reserve-title">
+      <div class="reserve__inner">
+        <div class="reserve__copy">
+          <h2 class="section-title" id="reserve-title" data-lines>Reserva tu habitación</h2>
+          <p class="section-lede">Las tarifas incluyen el desayuno en el patio. Respondemos cada solicitud personalmente, casi siempre en el mismo día.</p>
+          <img class="reserve__agave" data-reserve-agave src="assets/img/hero/agave-pot.webp" alt="" width="1100" height="1300" loading="lazy" aria-hidden="true">
+        </div>
+        <form class="ticket" novalidate data-form>
+          <div class="field">
+            <label for="r-in">Llegada</label>
+            <input id="r-in" name="arrival" type="date" required aria-describedby="r-in-err">
+            <p class="field__error" id="r-in-err" hidden>Elige una fecha de llegada.</p>
+          </div>
+          <div class="field">
+            <label for="r-out">Salida</label>
+            <input id="r-out" name="departure" type="date" required aria-describedby="r-out-err">
+            <p class="field__error" id="r-out-err" hidden>Elige una salida posterior a tu llegada.</p>
+          </div>
+          <div class="field">
+            <label for="r-guests">Huéspedes</label>
+            <select id="r-guests" name="guests">
+              <option>1 huésped</option>
+              <option selected>2 huéspedes</option>
+              <option>3 huéspedes</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="r-room">Habitación</label>
+            <select id="r-room" name="room">
+              <option>Cualquiera</option>
+              <option>Camera del Sole</option>
+              <option>La Loggia</option>
+              <option>Stanza della Corte</option>
+              <option>La Torretta</option>
+            </select>
+          </div>
+          <div class="field field--wide">
+            <label for="r-email">Correo electrónico</label>
+            <input id="r-email" name="email" type="email" autocomplete="email" required aria-describedby="r-email-err">
+            <p class="field__error" id="r-email-err" hidden>Escribe un correo para que podamos confirmarte.</p>
+          </div>
+          <div class="ticket__foot">
+            <button class="btn btn--terra" type="submit">Reservar habitación</button>
+            <p class="ticket__status" role="status" aria-live="polite" data-status></p>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" aria-labelledby="footer-title">
+    <div class="footer__inner">
+      <div class="footer__top">
+        <h2 class="footer__word" id="footer-title">Casa Lumen</h2>
+        <figure class="footer__window" aria-hidden="true"><img src="assets/img/hero/facade.webp" alt="" width="2560" height="1440" loading="lazy"></figure>
+      </div>
+      <div class="footer__cols">
+        <div><p class="footer__label">Dónde estamos</p><p>Vico dei Lumi 7<br>73100 Lecce, Italia</p></div>
+        <div><p class="footer__label">Horario</p><p>Abierto todo el año.<br>El patio cierra a medianoche.</p></div>
+        <div><p class="footer__label">En esta página</p><p><a href="#rooms">Habitaciones</a><br><a href="#days">Los días</a><br><a href="#reserve">Reservar habitación</a></p></div>
+      </div>
+      <p class="footer__fine">© 2026 Casa Lumen. Marca ficticia creada como estudio de diseño. Todas las imágenes se generaron de forma procedural.</p>
+    </div>
+  </footer>
+
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="arch-mark" viewBox="0 0 64 64"><path d="M8.00,60.00 L8.00,28.00 A24.00,24.00 0 0 1 56.00,28.00 L56.00,60.00 Z M17.00,60.00 L17.00,31.00 A15.00,15.00 0 0 1 47.00,31.00 L47.00,60.00 Z" fill-rule="evenodd" fill="currentColor"/><path d="M20,60 A12,12 0 0 1 44,60 Z" fill="currentColor"/></symbol>
+  </svg>
+
+  <script src="vendor/gsap.min.js" defer></script>
+  <script src="vendor/ScrollTrigger.min.js" defer></script>
+  <script src="vendor/SplitText.min.js" defer></script>
+  <script src="vendor/lenis.min.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
